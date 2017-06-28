@@ -1,0 +1,2 @@
+class newest():
+  pass
