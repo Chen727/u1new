@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from app2 import views as calc_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+   # url(r'^add2/(\d+)/(\d+)/$',calc_views.add2,name='add2')
+    url(r'^$',calc_views.html,name='html')
 ]
