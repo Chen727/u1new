@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testhtml</title>
+</head>
+<body>
+
+ppppp eee</br>
+{% for i in TutorialList %}
+      {{i}}
+      {% if not forloop.last %}
+          ,
+      {% endif %}
+{% endfor %}
+</body>
+</html>
